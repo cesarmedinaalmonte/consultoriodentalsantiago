@@ -155,6 +155,13 @@
     <Compile Include="frmvisor.Designer.cs">
       <DependentUpon>frmvisor.cs</DependentUpon>
     </Compile>
+    <Compile Include="listadepaciente.cs" />
+    <Compile Include="listadodepaciente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listadodepaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Models\Class_cita.cs" />
     <Compile Include="Models\Class_doctor.cs" />
     <Compile Include="Models\Class_patient.cs" />
@@ -169,6 +176,13 @@
     <Compile Include="Pagocita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="visorpaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visorpaciente.Designer.cs">
+      <DependentUpon>visorpaciente.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="visortrabajo.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -213,6 +227,10 @@
     <EmbeddedResource Include="frmvisor.resx">
       <DependentUpon>frmvisor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="listadodepaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listadodepaciente.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pagar_Cita.resx">
       <DependentUpon>Pagar_Cita.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +244,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="visorpaciente.resx">
+      <DependentUpon>visorpaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="visortrabajo.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>visortrabajo.cs</LastGenOutput>

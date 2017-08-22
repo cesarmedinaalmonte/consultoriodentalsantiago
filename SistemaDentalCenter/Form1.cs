@@ -201,6 +201,12 @@ namespace SistemaDentalCenter
             Pagar_Cita pagocita = new Pagar_Cita();
             pagocita.Show();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            frmBuscarPaciente f = new frmBuscarPaciente();
+            f.Show();
+        }
     }
     }
 

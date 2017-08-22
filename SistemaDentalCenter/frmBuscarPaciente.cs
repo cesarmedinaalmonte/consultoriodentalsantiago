@@ -149,6 +149,21 @@ namespace SistemaDentalCenter
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conexion obconexion = new conexion();
+            DataSet ds = new DataSet();
+
+            DataTable dt = obconexion.consultar2("select * from paciente");
+            ds.Tables.Add(dt);
+            ds.Tables[0].TableName = "paciente";
+
+
+            ds.WriteXml(@"C:\\DB\listapaciente.xml");
+            visorpaciente f = new visorpaciente("listadepaciente.rpt");
+            f.Show();
+        }
     }
     }
 

@@ -40,6 +40,7 @@
             this.rdCedula_BP = new System.Windows.Forms.RadioButton();
             this.rdId_BP = new System.Windows.Forms.RadioButton();
             this.txtBusqueda_paciente = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -206,6 +207,17 @@
             this.txtBusqueda_paciente.Size = new System.Drawing.Size(249, 26);
             this.txtBusqueda_paciente.TabIndex = 7;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Location = new System.Drawing.Point(639, 459);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 35);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Imprimir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -277,7 +289,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(763, 480);
+            this.ClientSize = new System.Drawing.Size(789, 500);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gboxBusqueda_Paciente);
             this.Name = "frmBuscarPaciente";
             this.Text = "frmBuscarPaciente";
@@ -317,5 +330,6 @@
         private System.Windows.Forms.BindingSource classpatientBindingSource1;
         private System.Windows.Forms.BindingSource classpatientBindingSource2;
         private System.Windows.Forms.RadioButton rdNombre_BP;
+        private System.Windows.Forms.Button button1;
     }
 }
